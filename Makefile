@@ -9,8 +9,8 @@ run:
 		--rm \
 		--interactive \
 		--tty \
-		--mount type=bind,source=$(PWD),target=/srv/jekyll \
-		--mount type=volume,target=$(PWD)/.git \
+		--mount type=bind,source=$(shell PWD),target=/srv/jekyll \
+		--mount type=volume,target=$(shell PWD)/.git \
 		-p 4000:4000 \
 		$(IMAGE_TAG) \
 		bundle exec jekyll serve \
