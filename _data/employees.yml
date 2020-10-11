@@ -1,6 +1,3 @@
-- name: Albin
-  tagline: Albin är systemutvecklare med intresse för allting som handlar om data. Handlar det om att plocka fram nya ML-lösningar på gamla problem eller att bygga back end- och molnlösningar för komplexa system blir han extra exalterad. Han är en engagerad lagspelare som älskar när människor ges möjlighet att lära sig av varandra. När Albin inte knackar kod i Vim så ägnar han fritiden åt att läsa böcker, spela bas och vara ute med sin stora vita hund.
-
 - name: Henrik
   tagline: Henrik kombinerar djup teknisk kunskap och problemlösning med en enastående förmåga att fylla rummet med entusiasm. Teknikagnostisk med en rejäl dos nörderi i fantasy, bevattningssystem, smarta hem och olika sorters krypteringsnycklar. Henrik är empatisk och kommunicerar rakt i alla lägen - förutom kl 11:30 för då ringer mat och sovklockan. Fullstack, BI och tech-ledning är bara några av hans erfarenheter.
 
@@ -15,9 +12,6 @@
 
 - name: Leo
   tagline: Gedigen utvecklare med känsla för helhet och kvalité. Älskar att dampa loss hemma i trädgården, där rabatter och trallar flyger åt alla håll. Leo har en nyfunnen passion för att träna Thaiboxning samt traditionell boxning, troligen är detta en sorts 40-årskris.
-
-- name: Markus
-  tagline: Markus är innovations- och vetenskapsfantast som tror att det mesta kan lösas med en påhittig teknisk lösning. Han tror starkt på att team av engagerade människor från olika bakgrund kan uträtta storverk mot ett gemensamt mål. Med sig har han erfarenhet av webb-, spel- och algoritmutveckling i en uppsjö av språk och miljöer. I lurarna spelas jazz, soul och funk och hans många gitarrer är alltid nära till hands.
 
 - name: Set
   tagline: Hejares alldeles egna tech wizard. Är det svårt så är det kul. Kod och tech lead med förståelse för affären och beteenden i team gör Set till alla teams stabila klippa. En vegetariansk globetrotter med många barnvagnar i garaget!
