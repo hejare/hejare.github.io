@@ -21,6 +21,13 @@
           <li><a href="#contact">Kontakt</a></li>
         </ul>
     </div>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var topBar = document.getElementById("top-bar");
+        topBar.classList.toggle("sticky", window.scrollY > 25)
+      })
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <script src="js/animations.js"></script>
     <!-- End Top Bar -->
