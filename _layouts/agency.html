@@ -12,11 +12,12 @@
   <body onload="randomizeWhoWeAre()">
 
     <!-- Start Top Bar -->
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <img src="images/weblogo.png" class="logotype"/>
+    <div class="top-bar" id="top-bar">
+      <div class="logotype" id="logo" onclick="goToTop()">
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script src="js/animations.js"></script>
     <!-- End Top Bar -->
 
     {{ content }}
