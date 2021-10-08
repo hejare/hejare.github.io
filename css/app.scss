@@ -16,12 +16,98 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .top-bar {
-  background-color: #fff;
+  position: fixed;
+  font-size: max(1.5vw, 12px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  alignment: center;
+  transition: 0.5s;
+  z-index: 9999;
+  background-color: transparent;
+  display: flex;
+  padding-top: 40px;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width: 700px) {
+    justify-content: space-around;
+  }
+}
+
+.top-bar.sticky {
+  transition: 0.5s;
+  font-size: max(0.8vw, 8px);
+  // None linear gradient hack, use Bezier curves to smooth out the hard line :)
+  background: linear-gradient(
+                  hsl(0, 0%, 0%) 0%,
+                  hsla(0, 0%, 0%, 0.738) 9%,
+                  hsla(0, 0%, 0%, 0.541) 24%,
+                  hsla(0, 0%, 0%, 0.382) 37%,
+                  hsla(0, 0%, 0%, 0.278) 46.5%,
+                  hsla(0, 0%, 0%, 0.194) 55%,
+                  hsla(0, 0%, 0%, 0.126) 63%,
+                  hsla(0, 0%, 0%, 0.075) 70.2%,
+                  hsla(0, 0%, 0%, 0.042) 76.1%,
+                  hsla(0, 0%, 0%, 0.021) 81%,
+                  hsla(0, 0%, 0%, 0.008) 85.2%,
+                  hsla(0, 0%, 0%, 0.002) 95.2%,
+                  hsla(0, 0%, 0%, 0) 100%
+  );
+}
+
+.top-bar ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (max-width: 900px) {
+    justify-content: space-between;
+  }
+}
+
+.top-bar ul li {
+  position: relative;
+  list-style: none;
+}
+
+.top-bar ul li a {
+  position: relative;
+  margin: 0 20px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  background-color: transparent;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.top-bar ul li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  background: #fff;
+  width: 0;
+}
+.top-bar ul li a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .top-bar .logotype {
-  width: 13em;
-  margin: 1em;
+  width: max(10vw, 50px);
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+}
 }
 
 // What we are
