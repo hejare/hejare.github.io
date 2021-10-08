@@ -108,11 +108,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
 }
+
+h1 {
+  font-size: max(2vw, 40px);
 }
 
 // What we are
 .what-we-are {
-  background-color: $swedishDarkBlue;
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
@@ -120,30 +122,28 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   margin-bottom: 2em;
-  min-height: 11em;
 
   em.nice {
     color: $swedishYellow;
   }
 
   &.callout.large {
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-
-    @media screen and (min-width: 40em) {
-      padding: 6rem 3rem;
-      min-height: 21rem;
-    }
-
-    @media screen and (min-width: 75em) {
-      padding: 6rem 3rem;
-      min-height: initial;
-    }
-
+    height: 75vh;
+    padding-top: 35vh;
+    background-image: url('./../images/hero_hejare.png'), linear-gradient(transparent, #807f7f 0%, transparent);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
   }
 }
-
-
 
 // Who we are
 .who-we-are {
