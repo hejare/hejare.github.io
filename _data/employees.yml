@@ -49,7 +49,7 @@
 
 - name: Kenjoe
   tagline: "Kenjoe är en entusiatisk analytiker som frodas i att bli utmanad. Extra glad blir han om utmaningen kretsar kring matematik, maskininlärning eller musik. Det går att fråga honom om allt från finans till elkraft. Tidiga mornar hittar du honom på någon av Stockholms klätterväggar eller frukostkaféer."
-  
+
 - name: Erik
   tagline: "Erik är en pålitlig utvecklare som trivs när han får utmanas och lära sig nya saker. Han har även en unik förmåga att skapa god stämning i sociala sammanhang. När Erik inte programmerar iOS-appar eller maskininlärningsmodeller identifieras han som Hejares egna sportfåne. Fotboll, skidåkning, innebandy och paddel är bara några av sporterna han tycker om. En gitarr i handen eller bearnaisesås i magen fungerar också bra."
 
@@ -61,3 +61,6 @@
 
 - name: Maria
   tagline: "Maria är en kreativ utvecklare som brinner för problemlösning i alla dess former men grafteori och språkteknologi är lite extra kul. Hon trivs i alla sammanhang och tar sig gladeligen an nya utmaningar. Sin fritid ägnar hon åt att sjunga musikallåtar och påta i sina krukväxter."
+
+- name: Filip
+  tagline: "Filip är en allt-i-allo människa som kan och vill hjälpa till i alla situationer, oavsett om det är att skruva ihop IKEA-möbler eller knacka kod. Han är en stor lunchgymmar-fanboy som även får för sig att spela discgolf då och då (rätt ofta). Utöver det så har Filip ett brinnande intresse för spel i både digitala och analoga former, där han gärna tar en match Rocket League! "
