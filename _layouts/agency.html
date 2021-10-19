@@ -22,32 +22,12 @@
         </ul>
     </div>
 
-    <script type="text/javascript">
-      var previousY = window.scrollY;
-      window.addEventListener("scroll", function () {
-        var topBar = document.getElementById("top-bar");
-        topBar.classList.toggle("sticky", window.scrollY > 25)
-
-        // Hide away the top bar after some scrolling and shows it again when scroll up starts.
-        if (window.scrollY > 500) {
-          var currentY = window.scrollY;
-          if (previousY > currentY) {
-            document.getElementById("top-bar").style.top = "0";
-          } else {
-            document.getElementById("top-bar").style.top = "-20vh";
-          }
-          previousY = currentY;
-        }
-      })
-    </script>
-
-    <script>
-      function goToTop(){
-        window.scrollTo(0, 0);
-      }
-    </script>
+    <!-- Top bar scripts -->
+    <script src="js/sticky-top-bar.js"></script>
+    <script src="js/go-home.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <script src="js/animations.js"></script>
+
     <!-- End Top Bar -->
 
     {{ content }}
