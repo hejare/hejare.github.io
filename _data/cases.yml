@@ -1,5 +1,6 @@
 - name: Supersmidiga städer
   image: parking.svg
+  class: case-parking
   description: Kunden är en snabbt växande och globalt ledande aktör i att hitta, betala och hantera parkeringar. Hejare har varit med från början i utvecklingen av en helt ny produkt. I ett tätt samarbete med kunden och användare har vi itererat fram superhärlig UX och design. Med fräscha JavaScript-ramverk har vi tillsammans med kunden arbetat fullstack och i symbios med avancerade algoritmer. Projektet är påhejat av hela organisationen och kundens kunder ser fram emot att jobba i det.
 
 
@@ -19,6 +20,7 @@
 
 - name: Från Business Intelligence till Machine Learning
   image: machine-learning.svg
+  class: case-machine-learning
   description: Kunden är en snabbt växande aktör inom online casino och sports betting. Hejare fick uppdraget att bygga upp en ny avdelning med ambition att utforska och implementera machine learning för en bättre och mer individanpassad kundupplevelse.
 
 - name: Nya sätt att ta betalt för småbolag
