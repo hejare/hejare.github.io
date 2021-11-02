@@ -12,27 +12,38 @@
   <body onload="randomizeWhoWeAre()">
 
     <!-- Start Top Bar -->
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <img src="images/weblogo.png" class="logotype"/>
+    <div class="top-bar" id="top-bar">
+      <div class="logotype" id="logo" onclick="goToTop()">
       </div>
+        <ul>
+          <li><a href="#portfolio">Projekt</a></li>
+          <li><a href="#the-team">Möt alla Hejare</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
     </div>
+
+    <!-- Top bar scripts -->
+    <script src="js/sticky-top-bar.js"></script>
+    <script src="js/go-home.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script src="js/animations.js"></script>
+
     <!-- End Top Bar -->
 
     {{ content }}
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="row">
         <div class="small-12 columns">
           <p class="slogan">Är du en hejare på något? Hör av dig!</p>
           <h4 class="email"><a href="mailto:{{ site.data.company.email }}">{{ site.data.company.email }}</a></h4>
           <h4 class="phone"><a href="tel:{{ site.data.company.phone }}">{{ site.data.company.phone }}</a></h4>
           {% if site.data.company.address != undefined %}
-          <h4 class="address"><br>{{ site.data.company.address | replace: ',', '<br/>'  }}</h4>
+          <h4 class="address">{{ site.data.company.address | replace: ',', '<br/>'  }}</h4>
           {% endif %}
-          <p class="copywrite">Crafted with love by incredible techies at Hejare 2020</p>
+          <p class="copywrite">Crafted with love by incredible techies at Hejare 2021</p>
         </div>
       </div>
     </footer>
@@ -45,12 +56,10 @@
     <script>
       $(document).foundation();
 
-
       var skills = {{ site.data.skills | jsonify }};
 
       skills[skills.length - 1] += "^5000";
       skills.push("");
-
 
       jQuery.fn.cleanWhitespace = function() {
         textNodes = this.contents().filter(
@@ -60,7 +69,6 @@
       }
 
       var humanize = Math.round((Math.random() * 100) + 20);
-
 
       var typedText = $('.what-we-are .already-typed');
       var intrvl;
@@ -81,15 +89,11 @@
           $(".what-we-are em:last").typed({
             strings: ["^2000 snälla"],
             typeSpeed: 300,
-
           })
-
-
         } else {
           newWordLength = wordLength;
         }
       }
-
 
       $(function(){
         $(".what-we-are em:last").typed({
@@ -98,11 +102,8 @@
           startDelay: 1500,
           //shuffle: true,
           callback: function() {
-
             $(".what-we-are em:last").remove();
             intrvl = setInterval(backspace, humanize);
-
-
           }
         });
       });

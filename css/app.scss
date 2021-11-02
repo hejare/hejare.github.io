@@ -7,57 +7,213 @@ $swedishDarkBlue: #233747;
 $swedishGray: #7a7d81;
 $swedishGreenBlue: #159aaa; // 189aaa
 body {
-  font-family: Avenir, Futura, sans-serif;
+  font-family: Avenir, Futura, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Avenir, Futura, sans-serif;
+  font-family: Avenir, Futura, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+@keyframes appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .top-bar {
-  background-color: #fff;
+  position: fixed;
+  font-size: 1.4rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.3s ease-out;
+  z-index: 9999;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  animation: appear 0.5s;
+
+  @media (max-width: 1100px) {
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 0.8rem;
+  }
+
+  &:not(.sticky) {
+    a {
+      color: white;
+    }
+
+    .logotype path {
+      fill: white;
+    }
+  }
+}
+
+.top-bar.sticky {
+  // None linear gradient hack, use Bezier curves to smooth out the hard line :)
+  background: rgba(255,255,255,0.86);
+
+  @media (min-width: 1100px) {
+    ul {
+      transform: scale(0.8);
+      transform-origin: center right;
+    }
+  
+    .logotype {
+      transform: scale(0.8);
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.top-bar ul {
+  transition: 0.3s ease-out;
+  transform-origin: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+  max-width: 100%;
+
+  @media (min-width: 1100px) {
+    justify-content: flex-end;
+  }
+}
+
+.top-bar ul li {
+  position: relative;
+  list-style: none;
+  min-width: 0;
+  text-align: center;
+  padding: 0 10px;
+
+  @media (min-width: 1100px) {
+    flex: auto;
+    padding: 0 20px;
+  }
+}
+
+.top-bar ul li a {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  text-decoration: none;
+  letter-spacing: 2px;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.top-bar ul li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  background: currentColor;
+  width: 0;
+}
+.top-bar ul li a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .top-bar .logotype {
-  width: 13em;
-  margin: 1em;
+  transition: 0.3s ease-out;
+  transform-origin: center right;
+  width: max(10vw, 50px);
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 1100px) {
+    margin: 1em;
+    width: 90px;
+  }
+}
+
+h1 {
+  font-size: max(2vw, 40px);
+
+  @media (max-width: 640px) {
+    font-size: 2rem;
+  }
 }
 
 // What we are
 .what-we-are {
-  background-color: $swedishDarkBlue;
+  overflow: hidden;
+  margin-bottom: 2em;
 
   h1, h2, h3, h4, h5, h6 {
+    word-break: break-word;
     font-weight: 700;
     color: white;
   }
 
-  margin-bottom: 2em;
-  min-height: 11em;
+  @media (max-width: 900px) {
+    h1 {
+      font-size: 2rem;
+    }
+  } 
 
   em.nice {
     color: $swedishYellow;
   }
 
   &.callout.large {
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
+    height: 75vh;
+    padding-top: 38vh;
+    background-image: url('./../images/hero_hejare.png'), linear-gradient(transparent, #807f7f 0%, transparent);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
 
-    @media screen and (min-width: 40em) {
-      padding: 6rem 3rem;
-      min-height: 21rem;
+    @media (max-width: 900px) {
+      height: 85vh;
+      padding-top: 38vh;
     }
 
-    @media screen and (min-width: 75em) {
-      padding: 6rem 3rem;
-      min-height: initial;
+    @media (max-width: 400px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
-
   }
 }
-
-
 
 // Who we are
 .who-we-are {
@@ -72,6 +228,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .techie .portrait {
     width: 10em;
+    height: 10em;
     border: 2px solid $swedishGreenBlue;
     border-radius: 100%;
     margin-bottom: 1.5em;
@@ -81,22 +238,54 @@ h1, h2, h3, h4, h5, h6 {
 // What we are doing
 .figure-container {
   text-align: center;
+
+  @media (max-width: 640px) {
+    margin-top: 2rem;
+
+    img {
+      max-width: 120px;
+    }
+  }
 }
 
 .what-we-are-doing {
   margin-bottom: 4em;
+
+  @media (max-width: 640px) {
+    justify-content: center;
+
+    .case-text {
+      max-width: 24em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
   .case {
     margin-top: 1em;
   }
 
   .figure {
-    width: 150px;
+    width: 50%;
     margin-bottom: 1em;
   }
 }
 
+.case-parking {
+  margin-right: -10%;
+}
+
+.case-machine-learning {
+  margin-left: -10%;
+}
+
 // Other stuff
+.section-header {
+  @media (max-width: 640px) {
+    justify-content: center;
+  }
+}
+
 hr {
   border-bottom: 1px solid $swedishGreenBlue;
   margin-top: 2em;
@@ -152,14 +341,23 @@ hr {
   background-color: $swedishDarkBlue;
   color: #fff;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   padding: 4rem;
+
+  @media (max-width: 640px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
   p {
     &.slogan {
       color: $swedishGray;
-      font-size: 1.8rem;
+      font-size: 2.0rem;
       margin: 0 0 1rem;
+
+      @media (max-width: 640px) {
+        font-size: 1.5rem;
+      }
     }
 
     &.copywrite {
@@ -196,12 +394,19 @@ footer h4 {
 
 footer h4 {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 400px) {
+    justify-content: flex-start;
+  }
 
   &:before {
     font-family: "foundation-icons";
     font-weight: 300;
-    padding-top: 0.2rem;
-    font-size: 2rem;
+    font-size: 3rem;
     color: $swedishGreenBlue;
     padding-left: 0.5rem;
     padding-right: 1.65rem;
@@ -220,6 +425,19 @@ footer h4 {
   }
 
   &.address:before {
+    display: flex;
+    flex-direction: column;
     content: "\f172 ";
+  }
+
+  &.address {
+    display: flex;
+    flex-direction: column;
+    content: "\f172 ";
+
+    @media (max-width: 640px) {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 }

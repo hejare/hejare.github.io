@@ -49,7 +49,7 @@
 
 - name: Kenjoe
   tagline: "Kenjoe är en entusiatisk analytiker som frodas i att bli utmanad. Extra glad blir han om utmaningen kretsar kring matematik, maskininlärning eller musik. Det går att fråga honom om allt från finans till elkraft. Tidiga mornar hittar du honom på någon av Stockholms klätterväggar eller frukostkaféer."
-  
+
 - name: Erik
   tagline: "Erik är en pålitlig utvecklare som trivs när han får utmanas och lära sig nya saker. Han har även en unik förmåga att skapa god stämning i sociala sammanhang. När Erik inte programmerar iOS-appar eller maskininlärningsmodeller identifieras han som Hejares egna sportfåne. Fotboll, skidåkning, innebandy och paddel är bara några av sporterna han tycker om. En gitarr i handen eller bearnaisesås i magen fungerar också bra."
 
@@ -64,3 +64,9 @@
 
 - name: Leif
   tagline: "Leif är en mångfacetterad fullstack-utvecklare med ett öga för estetik. Han är särskilt engagerad i Frontend-utveckling men en bakgrund inom infrastruktur, fintech samt spelutveckling gör honom till ett multiverktyg för arbete inom många områden. På fritiden ägnar han sig åt 3D-modellering, spelutveckling och digital design."
+
+- name: David
+  tagline: "David kännetecknas av sin passion för kunskap, vilket speglas i hans teknikintresse för allt från maskininlärning och data engineering till full-stack och backendutveckling. Allra roligast är livet när han lär sig nya saker och får dela kunskap och erfarenheter med andra. Utöver mjukvaruutveckling sysslar David gärna med att brygga specialkaffe och att spela slagverk i symfoniorkester."
+
+- name: John
+  tagline: "John älskar att ta sig an nya utmaningar med lite av en \"Hur svårt kan det va'?\"-mentalitet. Bäst blir det när han får jobba med grafik, ljud och kodning i samma projekt. Om han bott i Lönneberga hade man troligen hittat honom i snickerboa. Hopp fallerej!"
