@@ -56,11 +56,13 @@ h1, h2, h3, h4, h5, h6 {
 
   &:not(.sticky) {
     a {
-      color: white;
+      //color: white;
+      color: black;
     }
 
     .logotype path {
-      fill: white;
+      //fill: white;
+      fill: black;
     }
   }
 }
@@ -190,7 +192,7 @@ h1 {
   &.callout.large {
     height: 75vh;
     padding-top: 38vh;
-    background-image: url('./../images/hero_hejare.png'), linear-gradient(transparent, #807f7f 0%, transparent);
+    background-image: url('./../images/hero-hejare-2.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
