@@ -56,11 +56,13 @@ h1, h2, h3, h4, h5, h6 {
 
   &:not(.sticky) {
     a {
-      color: white;
+      //color: white;
+      color: black;
     }
 
     .logotype path {
-      fill: white;
+      //fill: white;
+      fill: black;
     }
   }
 }
