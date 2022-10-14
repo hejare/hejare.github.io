@@ -193,9 +193,9 @@ h1 {
     //height: 75vh;
     //padding-top: 38vh;
     //background-image: url('./../images/hero-hejare-2.jpeg');
-    background-color: #159aaa;
+    background-color: transparent;
     position: absolute;
-    top: 0;
+    top: 20%;
     // background-repeat: no-repeat;
     // background-position: center;
     // background-attachment: fixed;
@@ -537,7 +537,7 @@ footer h4 {
   // Total Slideshow dimensions
     width: 100vw;
     height: 75vh;
-    
+    margin-bottom: 2rem;
     // Each slide's global style
     * {
       width: 100vw;
