@@ -526,3 +526,81 @@ footer h4 {
     }
   }
 }
+
+
+// slide show
+
+.slideShow {
+  // Total Slideshow dimensions
+    width: 100vw;
+    height: 75vh;
+    
+    // Each slide's global style
+    * {
+      width: 100vw;
+      height: 75vh;
+      background-position:top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-blend-mode: multiply;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      min-height: 50vh;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
+  .slide3 {
+    background-image: url('./../images/hero-hejare-2.jpeg');
+  }
+  .slide2 {
+    background-image: url('./../images/hejare-hero-BW.jpeg');
+    animation: fade 15s 5s infinite ease-in-out;
+  }
+  .slide1 {
+    background-image: url('./../images/hero-sommar-22.png');
+    animation: fade 15s infinite ease-in-out;
+  }
+  
+  // SLideshow text Overlay
+  .banner {
+    width: 100vw;
+    height: 75vh;
+    font-size: 72px;
+    color: #555;
+    font-weight: 1000;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  //Slideshow Animation
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 0;
+    }
+    98% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1
+    }
+  }
+  
