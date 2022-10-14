@@ -190,20 +190,23 @@ h1 {
 
 
   &.callout.large {
-    height: 75vh;
-    padding-top: 38vh;
-    background-image: url('./../images/hero-hejare-2.jpeg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-blend-mode: multiply;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 50vh;
-    display: flex;
-    flex-direction: row;
+    //height: 75vh;
+    //padding-top: 38vh;
+    //background-image: url('./../images/hero-hejare-2.jpeg');
+    background-color: #159aaa;
+    position: absolute;
+    top: 0;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-attachment: fixed;
+    // background-blend-mode: multiply;
+    // webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+    // min-height: 50vh;
+    // display: flex;
+    // flex-direction: row;
 
     @media (max-width: 900px) {
       height: 85vh;
@@ -548,7 +551,7 @@ footer h4 {
 
       background-repeat: no-repeat;
       background-position: center;
-      background-attachment: fixed;
+      //background-attachment: fixed;
       background-blend-mode: multiply;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -583,6 +586,7 @@ footer h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid blue;
   }
   
   //Slideshow Animation
