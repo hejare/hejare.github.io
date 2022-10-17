@@ -217,6 +217,31 @@ h1 {
   }
 }
 
+// Bragging
+.gasell-content-wrapper > img {
+ margin-bottom: 1rem;
+}
+
+.gasell-text {
+  @media (min-width: 460px) {
+    &::before {
+      content: "✌️";
+      padding: 0 0.8rem 0 0;
+    }
+    &::after {
+      content: "🎉";
+      padding: 0 0 0 1rem;
+    }
+  }
+
+  @media (max-width: 459px) {
+    &::after {
+      content: "\A ✌️ 😍  🎉";
+      white-space: pre;
+    }
+  }
+}
+
 // Who we are
 .who-we-are {
   .techie {
@@ -339,7 +364,7 @@ hr {
 }
 
 // Footer
-.footer {
+.footer, .gasell {
   background-color: $swedishDarkBlue;
   color: #fff;
   text-align: center;
