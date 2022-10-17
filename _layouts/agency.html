@@ -37,9 +37,6 @@
     <footer class="footer" id="contact">
       <div class="row">
         <div class="small-12 columns">
-          <p class="slogan">Är du en hejare på något? Hör av dig!</p>
-          <h4 class="email"><a href="mailto:{{ site.data.company.email }}">{{ site.data.company.email }}</a></h4>
-          <h4 class="phone"><a href="tel:{{ site.data.company.phone }}">{{ site.data.company.phone }}</a></h4>
           {% if site.data.company.address != undefined %}
           <h4 class="address">{{ site.data.company.address | replace: ',', '<br/>'  }}</h4>
           {% endif %}

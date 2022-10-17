@@ -56,13 +56,11 @@ h1, h2, h3, h4, h5, h6 {
 
   &:not(.sticky) {
     a {
-      //color: white;
-      color: black;
+      color: $swedishDarkBlue;
     }
 
     .logotype path {
-      //fill: white;
-      fill: black;
+      fill: $swedishDarkBlue;
     }
   }
 }
@@ -171,7 +169,7 @@ h1 {
 // What we are
 .what-we-are {
   overflow: hidden;
-  margin-bottom: 2em;
+  margin-bottom: 0;
 
   h1, h2, h3, h4, h5, h6 {
     word-break: break-word;
@@ -217,7 +215,50 @@ h1 {
   }
 }
 
+// Contact section
+.contact {
+  background-image: url('../images/wave.svg');
+  margin-bottom: 20px;
+  background-size: cover;
+  min-height: 350px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}
+
 // Bragging
+.gasell {
+  background-color: $swedishDarkBlue;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  justify-content: center;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+
+  .row {
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 460px) {
+        flex-direction: column;
+       }
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  
+  }
+}
+
 .gasell-content-wrapper > img {
  margin-bottom: 1rem;
 }
@@ -225,7 +266,6 @@ h1 {
 .gasell-text {
   @media (min-width: 460px) {
     &::before {
-      content: "✌️";
       padding: 0 0.8rem 0 0;
     }
     &::after {
@@ -364,12 +404,21 @@ hr {
 }
 
 // Footer
-.footer, .gasell {
-  background-color: $swedishDarkBlue;
+.footer {
+  background-image: url('./../images/wavy-footer.svg');
+  background-repeat: no-repeat;
   color: #fff;
   text-align: center;
   font-size: 1.8rem;
-  padding: 4rem;
+  padding-bottom: 20px;
+
+  .small-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+  }
 
   @media (max-width: 640px) {
     padding-left: 1rem;

@@ -4,6 +4,17 @@
   </div>
 </div>
 
+<div class="gasell">
+  <div class="row">
+    <div class="small-12 columns gasell-content-wrapper">
+      <div>
+        <img src="images/gasell.svg" width="55" height="55" alt="Gasell" />
+      </div>
+        <h4 class="gasell-text">Hejare är utnämnt till Gasellföretag 2022!</h4>
+    </div>
+  </div>
+</div>
+
 <div class="row column section-header" id="portfolio">
   <h1>Case i urval</h1>
 </div>
@@ -24,16 +35,16 @@
   {% endfor %}
 </div>
 
-<div class="gasell">
+<div class="contact" id="contact">
   <div class="row">
-    <div class="small-12 columns gasell-content-wrapper">
-      <img src="images/gasell.svg" width="160" height="160" alt="Gasell" />
-      <h4 class="gasell-text">Hejare är utnämnt till Gasellföretag 2022</h4>
+    <div class="small-12 columns center">
+      <h4 class="slogan">Är du en hejare på något? Hör av dig!</h4>
+      <h4 class="email"><a href="mailto:{{ site.data.company.email }}">{{ site.data.company.email }}</a></h4>
+      <h4 class="phone"><a href="tel:{{ site.data.company.phone }}">{{ site.data.company.phone }}</a></h4>
     </div>
   </div>
 </div>
 
-<br>
 
 
 <div class="row column section-header" id="the-team">
