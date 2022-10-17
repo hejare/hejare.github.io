@@ -171,7 +171,7 @@ h1 {
 // What we are
 .what-we-are {
   overflow: hidden;
-  margin-bottom: 2em;
+  margin-bottom: 0;
 
   h1, h2, h3, h4, h5, h6 {
     word-break: break-word;
@@ -232,6 +232,31 @@ h1 {
 }
 
 // Bragging
+.gasell {
+  background-color: $swedishDarkBlue;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  justify-content: center;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+
+  .row {
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  
+  }
+}
+
 .gasell-content-wrapper > img {
  margin-bottom: 1rem;
 }
@@ -378,7 +403,7 @@ hr {
 }
 
 // Footer
-.footer, .gasell {
+.footer {
   background-color: $swedishDarkBlue;
   color: #fff;
   text-align: center;
