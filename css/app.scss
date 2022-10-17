@@ -469,8 +469,7 @@ footer h4 {
 }
 
 footer h4 {
-  margin-top: 2rem;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -478,6 +477,8 @@ footer h4 {
 
   @media (max-width: 400px) {
     justify-content: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 0;
   }
 
   &:before {
