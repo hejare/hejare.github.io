@@ -217,6 +217,20 @@ h1 {
   }
 }
 
+// Contact section
+.contact {
+  background-image: url('../images/wave.svg');
+  margin-bottom: 20px;
+  background-size: cover;
+  min-height: 350px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}
+
 // Bragging
 .gasell-content-wrapper > img {
  margin-bottom: 1rem;
