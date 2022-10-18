@@ -187,6 +187,8 @@ h1 {
     color: $swedishYellow;
   }
 
+
+
   &.callout.large {
     height: 75vh;
     padding-top: 38vh;
@@ -195,7 +197,7 @@ h1 {
     background-position: center;
     background-attachment: fixed;
     background-blend-mode: multiply;
-    webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -211,6 +213,11 @@ h1 {
     @media (max-width: 400px) {
       padding-left: 1rem;
       padding-right: 1rem;
+    }
+
+    // target iOS & ipad OS since it does not support background-attachment: fixed
+    @supports (-webkit-touch-callout: none) {
+      background-attachment: scroll;
     }
   }
 }
