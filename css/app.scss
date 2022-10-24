@@ -255,7 +255,9 @@ h1 {
     padding: 2.5em;
     top: 5em;
   }
-
+  @media (max-height: 550px) {
+    opacity: 0;
+  }
 
 }
 
