@@ -190,6 +190,10 @@ h1 {
 
 
   &.callout.large {
+    /* override foundation */
+    border: none;
+    border-radius: 0;
+
     height: 75vh;
     padding-top: 38vh;
     background-image: url('./../images/hero-hejare-2.jpeg');
@@ -218,6 +222,19 @@ h1 {
     // target iOS & ipad OS since it does not support background-attachment: fixed
     @supports (-webkit-touch-callout: none) {
       background-attachment: scroll;
+    }
+
+    &:after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      aspect-ratio: 15 / 2;
+      background-image: url('./../images/wave-callout.svg');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: 60% 100%;
     }
   }
 }
