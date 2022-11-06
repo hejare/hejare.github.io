@@ -3,9 +3,12 @@
 
 // COLORS
 $swedishYellow: #f7ea48; // f7ea4c
-$swedishDarkBlue: #233747;
+$darkBlue: #1D428A;
+$lightBlue: #e8f0ff;
 $swedishGray: #7a7d81;
 $swedishGreenBlue: #159aaa; // 189aaa
+$linkInverted: #80acff;
+
 body {
   font-family: Avenir, Futura, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   background-color: #fff;
@@ -14,6 +17,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Avenir, Futura, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 @keyframes appear {
@@ -55,38 +64,20 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.8rem;
   }
 
-  &:not(.sticky) {
-    a {
-      color: $swedishDarkBlue;
-    }
+  a {
+    color: $darkBlue;
+  }
 
-    .logotype path {
-      fill: $swedishDarkBlue;
-    }
+  .logotype path {
+    fill: $darkBlue;
   }
 }
 
 .top-bar.sticky {
-  // None linear gradient hack, use Bezier curves to smooth out the hard line :)
   background: rgba(255,255,255,0.86);
-
-  @media (min-width: 1100px) {
-    ul {
-      transform: scale(0.8);
-      transform-origin: center right;
-    }
-  
-    .logotype {
-      transform: scale(0.8);
-      margin-top: 1em;
-      margin-bottom: 1em;
-    }
-  }
 }
 
 .top-bar ul {
-  transition: 0.3s ease-out;
-  transform-origin: center;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -125,7 +116,6 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   letter-spacing: 2px;
   background-color: transparent;
-  transition: 0.5s;
 }
 
 .top-bar ul li a:after {
@@ -146,10 +136,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .top-bar .logotype {
-  transition: 0.3s ease-out;
-  transform-origin: center right;
   width: max(10vw, 50px);
-  margin: 2em;
+  margin: 1em 2em;
   display: flex;
   justify-content: center;
 
@@ -316,11 +304,15 @@ h1 {
   justify-content: center;
   text-align: center;
   margin: 20px 0px 20px 0px;
+
+  a {
+    color: $linkInverted;
+  }
 }
 
 // Bragging
 .gasell {
-  background-color: $swedishDarkBlue;
+  background-color: $darkBlue;
   border: none;
   color: #fff;
   text-align: center;
@@ -374,20 +366,38 @@ h1 {
 // Who we are
 .who-we-are {
   .techie {
+    position: relative;
     margin-top: 2em;
     margin-bottom: 2em;
+
+    &_description {
+      background: $lightBlue;
+      padding: 1em;
+      border-radius: 1rem;
+    }
   }
 
   .tagline {
-    max-width: 24em;
+    font-size: 0.8888em; // 16px
+    margin-bottom: 0;
   }
 
   .techie .portrait {
-    width: 10em;
-    height: 10em;
-    border: 2px solid $swedishGreenBlue;
+    float: right;
+    margin-left: 1.2rem;
+    margin-bottom: 1.2rem;
     border-radius: 100%;
-    margin-bottom: 1.5em;
+    box-shadow: 0px 0px 0px 0.6rem #ffffff;
+
+    width: 9rem;
+    margin-top: -3rem;
+    margin-right: -5rem;
+
+    @media (max-width: 640px) {
+      width: 7rem;
+      margin-top: -3rem;
+      margin-right: -1rem;
+    }
   }
 }
 
@@ -397,7 +407,7 @@ h1 {
     margin-top: 2rem;
 
     img {
-      max-width: 120px;
+      max-width: 160px;
     }
   }
 }
@@ -409,18 +419,25 @@ h1 {
     justify-content: center;
 
     .case-text {
-      max-width: 24em;
       margin-left: auto;
       margin-right: auto;
+
+      background: $lightBlue;
+      padding: 1em;
+      border-radius: 1rem;
     }
   }
 
   .case {
-    margin-top: 1em;
+    margin-top: 1rem;
+
+    @media (min-width: 640px) {
+      margin-top: 3rem;
+    }
   }
 
   .figure {
-    width: 50%;
+    width: 60%;
     margin-bottom: 1em;
   }
 }
@@ -499,14 +516,22 @@ hr {
   color: #fff;
   text-align: center;
   font-size: 1.8rem;
-  padding-bottom: 20px;
+  margin-top: 4rem;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4rem;
+    background-color: $darkBlue;
+  }
 
   .small-12 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 2.5rem;
+    padding-top: 3rem;
   }
 
   @media (max-width: 640px) {
@@ -526,7 +551,7 @@ hr {
     }
 
     &.copywrite {
-      color: #8f9296;
+      color: rgba(255, 255, 255, 53%);
       font-size: 0.875rem;
       margin: 0;
     }
@@ -574,13 +599,13 @@ footer h4 {
     font-family: "foundation-icons";
     font-weight: 300;
     font-size: 3rem;
-    color: $swedishGreenBlue;
+    color: $linkInverted;
     padding-left: 0.5rem;
     padding-right: 1.65rem;
     -webkit-text-fill-color: transparent;
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: $swedishGreenBlue;
+    -webkit-text-stroke-color: $linkInverted;
   }
 
   &.phone:before {

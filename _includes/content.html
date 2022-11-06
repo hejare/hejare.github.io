@@ -15,13 +15,13 @@
 <div class="row column what-we-are-doing" aria-label="Case i urval">
   {% for case in site.data.cases %}
   <div class="case row">
-    <div class="column small-12 medium-8">
+    <div class="column small-order-2 medium-order-1 small-12 medium-8">
       <div class="case-text">
         <h3>{{ case.name }}</h3>
         <p>{{ case.description }}</p>
       </div>
     </div>
-    <div class="figure-container column small-12 medium-4 flex-container align-center align-middle">
+    <div class="figure-container column medium-order-2 small-12 medium-4 flex-container align-center align-middle">
       <img src="images/{{ case.image }}" class="figure {{ case.class }}" alt="{{ case.name }}" />
     </div>
   </div>
@@ -46,13 +46,15 @@
 
   {% for employee in site.data.employees %}
   <div class="column column-block techie">
-    {% if employee.altImageName != null %}
-      <img src="images/employees/{{ employee.altImageName }}" class="portrait float-center" alt="{{ employee.name }}">
-    {% else %}
-      <img src="images/employees/{{ employee.name }}.jpg" class="portrait float-center" alt="{{ employee.name }}">
-    {% endif %}
-    <h3 class="name text-center">{{ employee.name }}</h3>
-    <p class="tagline float-center">{{ employee.tagline }}</p>
+    <div class="small-12 medium-10 techie_description">
+      {% if employee.altImageName != null %}
+        <img src="images/employees/{{ employee.altImageName }}" class="portrait" alt="{{ employee.name }}">
+      {% else %}
+        <img src="images/employees/{{ employee.name }}.jpg" class="portrait" alt="{{ employee.name }}">
+      {% endif %}
+      <h3 class="name">{{ employee.name }}</h3>
+      <p class="tagline float-center">{{ employee.tagline }}</p>
+    </div>
   </div>
   {% endfor %}
 
