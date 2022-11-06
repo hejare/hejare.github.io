@@ -1,42 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#CFB53B;stroke:#000000;stroke-miterlimit:10;}
-	.st1{stroke:#000000;stroke-miterlimit:10;}
-	.st2{enable-background:new    ;}
-	.st3{font-family:'MyriadPro-Regular';}
-	.st4{font-size:76.3904px;}
-	.st5{fill:none;stroke:#233647;stroke-width:5;}
-</style>
-<g id="Layer_3">
-	<g>
-		<g>
-			<path id="d4y5uofOB6" class="st0" d="M153.4,16.6c2.3-1,5,0.1,6,2.4c7.9,18.3,29.9,69.1,37.8,87.5c1,2.3-0.1,5-2.4,6
-				C164.4,125.6,77,163.4,46.6,176.6c-2.3,1-5-0.1-6-2.4c-7.9-18.3-29.9-69.1-37.8-87.5c-1-2.3,0.1-5,2.4-6
-				C35.6,67.6,123,29.8,153.4,16.6z"/>
-		</g>
-	</g>
-</g>
-<g id="Layer_8">
-	<g>
-		<path id="b1eOXQuQNO_00000054988269833441554180000000475963164526188470_" class="st1" d="M6.5,93.8l154.6-68.9l9.5,22.7
-			L16,116.5L6.5,93.8z"/>
-	</g>
-</g>
-<g id="Layer_4">
-	<g id="Layer_5">
-		<g>
-			<g>
-				<g class="st2">
-					<text transform="matrix(1.0553 -9.073976e-02 9.620081e-02 0.9954 86.8396 141.4829)" class="st3 st4">F</text>
-				</g>
-				<g class="st2">
-					<text transform="matrix(1.0553 -9.073976e-02 9.620081e-02 0.9954 86.8396 141.4829)" class="st5 st3 st4">F</text>
-				</g>
-			</g>
-		</g>
-	</g>
-</g>
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="12.397" y="73.58" width="130.093" height="83.5697" rx="10" transform="rotate(-14.2848 12.397 73.58)" fill="#5C7082"/>
+<rect x="15.85" y="87.0994" width="130.093" height="17.2309" transform="rotate(-14.2848 15.85 87.0994)" fill="#3A4E61"/>
+<rect x="21.329" y="57.0994" width="130.093" height="83.5697" rx="10" transform="rotate(-14.2848 21.329 57.0994)" fill="#FFD25C"/>
+<rect x="24.7303" y="70.4579" width="130.093" height="17.2309" transform="rotate(-14.2848 24.7303 70.4579)" fill="#233647"/>
+<rect x="40.7167" y="94.8365" width="74.9543" height="13.7847" transform="rotate(-14.2848 40.7167 94.8365)" fill="#F3F3F3"/>
+<rect x="47.3066" y="120.719" width="103.385" height="6.0308" transform="rotate(-14.2848 47.3066 120.719)" fill="#C4A860"/>
 </svg>
