@@ -9,6 +9,7 @@ $swedishGreenBlue: #159aaa; // 189aaa
 body {
   font-family: Avenir, Futura, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   background-color: #fff;
+  font-size: 112.5%; // corresponds to 18px
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -392,8 +393,6 @@ h1 {
 
 // What we are doing
 .figure-container {
-  text-align: center;
-
   @media (max-width: 640px) {
     margin-top: 2rem;
 
@@ -436,6 +435,8 @@ h1 {
 
 // Other stuff
 .section-header {
+  margin-top: 4em;
+
   @media (max-width: 640px) {
     justify-content: center;
   }
