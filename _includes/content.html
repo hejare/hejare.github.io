@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="figure-container column medium-order-2 small-12 medium-4 flex-container align-center align-middle">
-      <img src="images/{{ case.image }}" class="figure {{ case.class }}" alt="{{ case.name }}" />
+      <img src="images/{{ case.image }}" width="180" height="180" loading="lazy" class="figure {{ case.class }}" alt="{{ case.name }}" />
     </div>
   </div>
   {% endfor %}
@@ -48,9 +48,9 @@
   <div class="column column-block techie">
     <div class="small-12 medium-10 techie_description">
       {% if employee.altImageName != null %}
-        <img src="images/employees/{{ employee.altImageName }}.webp" srcset="images/employees/1x/{{ employee.altImageName }}.webp 1x, images/employees/{{ employee.altImageName }}.webp 2x" class="portrait" alt="{{ employee.name }}">
+        <img src="images/employees/{{ employee.altImageName }}.webp" srcset="images/employees/1x/{{ employee.altImageName }}.webp 1x, images/employees/{{ employee.altImageName }}.webp 2x" loading="lazy" width="144" height="144" class="portrait" alt="{{ employee.name }}">
       {% else %}
-        <img src="images/employees/{{ employee.name }}.webp" srcset="images/employees/1x/{{ employee.name }}.webp 1x, images/employees/{{ employee.name }}.webp 2x" class="portrait" alt="{{ employee.name }}">
+        <img src="images/employees/{{ employee.name }}.webp" srcset="images/employees/1x/{{ employee.name }}.webp 1x, images/employees/{{ employee.name }}.webp 2x" loading="lazy" width="144" height="144" class="portrait" alt="{{ employee.name }}">
       {% endif %}
       <h3 class="name">{{ employee.name }}</h3>
       <p class="tagline float-center">{{ employee.tagline }}</p>
