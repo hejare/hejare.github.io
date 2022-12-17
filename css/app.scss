@@ -308,7 +308,8 @@ h1 {
   background-image: url('../images/wave.svg');
   margin-bottom: 20px;
   background-size: cover;
-  min-height: 350px;
+  min-height: 300px;
+  height: 18vw;
   color: #fff;
   display: flex;
   align-items: center;
@@ -523,7 +524,7 @@ hr {
 // Footer
 .footer {
   background-image: url('./../images/wavy-footer.svg');
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   color: #fff;
   text-align: center;
   font-size: 1.8rem;
