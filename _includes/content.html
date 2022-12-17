@@ -48,9 +48,9 @@
   <div class="column column-block techie">
     <div class="small-12 medium-10 techie_description">
       {% if employee.altImageName != null %}
-        <img src="images/employees/{{ employee.altImageName }}" class="portrait" alt="{{ employee.name }}">
+        <img src="images/employees/{{ employee.altImageName }}.webp" srcset="images/employees/1x/{{ employee.altImageName }}.webp 1x, images/employees/{{ employee.altImageName }}.webp 2x" class="portrait" alt="{{ employee.name }}">
       {% else %}
-        <img src="images/employees/{{ employee.name }}.jpg" class="portrait" alt="{{ employee.name }}">
+        <img src="images/employees/{{ employee.name }}.webp" srcset="images/employees/1x/{{ employee.name }}.webp 1x, images/employees/{{ employee.name }}.webp 2x" class="portrait" alt="{{ employee.name }}">
       {% endif %}
       <h3 class="name">{{ employee.name }}</h3>
       <p class="tagline float-center">{{ employee.tagline }}</p>
