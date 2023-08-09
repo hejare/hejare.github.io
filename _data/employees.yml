@@ -1,14 +1,8 @@
-- name: Ludde
-  tagline: Ludde kan lite om väldigt mycket. Han är genuint intresserad i dig som person - vad som gör dig glad och vad du går igång på. Han är en tech-wannabe som älskar relationer och när han inte sprider sin energi runt sig så funderar han kring matlagning och bilism. Ludde kan sälj och techkonsulting.
-
 - name: Oscar
   tagline: En riktig multikonstnär i utveckling, UX och mobilt. Sakta men säkert betar han sig igenom video efter video från senaste Google I/O och håller sig uppdaterad på det senaste inom tech. Hobbyprojekt varvas med att sluka ny musik - är det en blandning av elektroniskt, rock och hip-hop går det hem direkt. Oscar älskar att engagera sig i och göra sin omgivning bättre. Om det kan förbättras så ska det förbättras är hans motto.
 
 - name: Leo
   tagline: Gedigen utvecklare med känsla för helhet och kvalité. Älskar att dampa loss hemma i trädgården, där rabatter och trallar flyger åt alla håll. Leo har en nyfunnen passion för att träna Thaiboxning samt traditionell boxning, troligen är detta en sorts 40-årskris.
-
-- name: Sebastian
-  tagline: "Sebastian har huvudet uppe bland molntjänster, infrastruktur och tooling. Vad applikationen gör är förstås viktigt, men desto roligare är allting runt omkring: hur den byggs, deployas, skalas, monitoreras, felsöks och trivs med livet rent allmänt. När Sebastian inte avnjuter nyhetsbreven från AWS med en kopp kaffe så jobbar han intensivt på att bli Sveriges snabbaste trummis!"
 
 - name: Johan
   tagline: "Låt dig inte luras av Johans lugna och trevliga uppenbarelse, för under ytan lurar ett knivskarpt intellekt som lätt kan dissekera vilket bekymmer som helst. Lyckligtvis använder han det för att lösa tekniska utmaningar och ett och annat brädspel och inte för världsherravälde (vad vi vet)."
@@ -16,9 +10,6 @@
 
 - name: Yvonne
   tagline: "Yvonne tar sig gärna an nya utmaningar, nya tekniker och nya människor - alltid med ett leende på läpparna. Om det dessutom kan innehålla mänskliga språk och Natural Language Processing är lyckan gjord."
-
-- name: Johan
-  tagline: "Johan är en generalist med erfarenheter inom utveckling, projektledning och produktägande. Media och finans är exempel på branscher där han har stor kännedom. Två nyckelord som speglar honom är effektiv och flexibel. Johan är i övrigt en sportfåne som konsumerar i princip vad som helst."
 
 - name: Damien
   tagline: "En australiensisk fullstackare med ett intresse för maskin-inlärning. Damien har en bred bakgrund som inkluderar bioteknik och brain-computer interfaces. Han gillar att driva projekt och bolag och har en SaaS startup under bältet. Någon sorts racket och en boll i handen gör Damien riktig glad. Ett piano under fingrarna funkar också."
