@@ -21,7 +21,7 @@
   tagline: "Malin är en utvecklare med expertis inom användarupplevelser och design. Hon tar glatt på sig nya utmaningar och gillar att hitta kreativa lösningar på kniviga problem. Malin finner harmoni när hon får utlopp för sin kreativitet vilket i hennes värld betyder att få sitta i verkstaden och skapa silversmycken."
 
 - name: Anton
-  tagline: "Anton är ett avdankad Starcraftlirare och en äventyrare i hemmets alla vrår. Han kanske inte är den mest händiga personen, men det hindrar honom inte från att försöka. Hans oförstörbara optimism och envishet gör att han är redo att hantera alla utmaningar, även om resultatet ibland blir mer \"episkt misslyckande\" än \"hemmets mästerverk\"."
+  tagline: 'Anton är ett avdankad Starcraftlirare och en äventyrare i hemmets alla vrår. Han kanske inte är den mest händiga personen, men det hindrar honom inte från att försöka. Hans oförstörbara optimism och envishet gör att han är redo att hantera alla utmaningar, även om resultatet ibland blir mer "episkt misslyckande" än "hemmets mästerverk".'
 
 - name: Ellen
   tagline: "En Dog Lady med passion för Hejare och kulturellt byggande, som sprudlar av idéer och handling. Älskar ordlekar och torra skämt."
@@ -48,7 +48,7 @@
   tagline: "En passionerad utvecklare och DJ-entusiast, delar sitt hjärta med kaninen Ruben, älskar både mode och äventyr i fjärran länder, broderar korsstygn med skicklighet, och stoltserar som en självutnämnd Nintendo-mästare."
 
 - name: John
-  tagline: "John älskar att ta sig an nya utmaningar med lite av en \"Hur svårt kan det va'?\"-mentalitet. Bäst blir det när han får jobba med grafik, ljud och kodning i samma projekt. Om han bott i Lönneberga hade man troligen hittat honom i snickerboa. Hopp fallerej!"
+  tagline: 'John älskar att ta sig an nya utmaningar med lite av en "Hur svårt kan det va''?"-mentalitet. Bäst blir det när han får jobba med grafik, ljud och kodning i samma projekt. Om han bott i Lönneberga hade man troligen hittat honom i snickerboa. Hopp fallerej!'
 
 - name: Martin
   tagline: "Ja ni ser ju på bilden. Martin är en glad kille som gillar att spela trummor, gärna med kollegor! Han är också en grym utvecklare med ett stort intresse för 3D och UX."
@@ -64,3 +64,6 @@
 
 - name: Adam
   tagline: "Han är en hjärtevärmande kombination av ölbryggande, en bristande skicklighet i spel och en kärlek till mackapärer, samtidigt som han finner lugn och tillfredsställelse i att kratta löv i trädgården."
+
+- name: Joe
+  tagline: "Joe är en optimistisk och passionerad fullstack-utvecklare. Med en evig nyfikenhet för hur världen fungerar, delar han gladeligen med sig av sin kunskap till andra. När han inte fördjupar sig i problemlösning, kopplar Joe av framför TV:n eller med ett klassiskt hiphop-album."
