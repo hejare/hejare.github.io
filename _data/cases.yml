@@ -1,12 +1,3 @@
-- name: Supersmidiga städer
-  image: parking.svg
-  class: case-parking
-  description: Kunden är en snabbt växande och globalt ledande aktör i att hitta, betala och hantera parkeringar. Hejare har varit med från början i utvecklingen av en helt ny produkt. I ett tätt samarbete med kunden och användare har vi itererat fram superhärlig UX och design. Med fräscha JavaScript-ramverk har vi tillsammans med kunden arbetat fullstack och i symbios med avancerade algoritmer. Projektet är påhejat av hela organisationen och kundens kunder ser fram emot att jobba i det.
-
-- name: Helt nödvändig business
-  image: bank.svg
-  description: Hejare både leder och är en del av ett produktteam på en bank. Teamet jobbar fullstack och förvaltar samt utvecklar produkter som ligger i framkant och utmanar andra aktörer i branschen. Vi är med och påverkar såväl teknisk arkitektur och fattar svåra beslut tillsammans med organisationen när gamla system ska bytas ut och förnyas. Banken har en framåtlutad och självorganiserande techorganisation - precis som vi.
-
 - name: Dataspelsbolaget
   image: gaming.svg
   description: Kunden är en hyllad och ledande spelstudio som utan motstycke exporterat modern kultur världen över. Vi jobbar med utvecklingen av en av deras kommande titlar. Det är massor av scripting, C++, UI och så spelar vi spelet i alla nyanser av ofärdigt för att säkerställa dess kvalitet!
@@ -15,6 +6,15 @@
   image: bicycles.svg
   description: Kunden är en internationell koncern inom marknadsföring som har tagit fram ett nytt koncept för privatpersoner att transportera sig i stadsmiljöer. Hejare fick ansvaret att som spindeln i nätet ta fram den tekniska lösningen och möjliggöra utrullningen.
 
+- name: Helt nödvändig business
+  image: bank.svg
+  description: Hejare både leder och är en del av ett produktteam på en bank. Teamet jobbar fullstack och förvaltar samt utvecklar produkter som ligger i framkant och utmanar andra aktörer i branschen. Vi är med och påverkar såväl teknisk arkitektur och fattar svåra beslut tillsammans med organisationen när gamla system ska bytas ut och förnyas. Banken har en framåtlutad och självorganiserande techorganisation - precis som vi.
+
 - name: Nya sätt att ta betalt för småbolag
   image: payments.svg
   description: Kunden är en snabbväxare som hjälper små företag att ta betalt för varor och tjänster. Satsningen fortsätter och man bad Hejare om hjälp att utveckla det kritiska steget i den inledande kundresan för nya kunder. Målet är att alla småföretagare enkelt och mycket effektivt komma igång med handel.
+
+- name: Supersmidiga städer
+  image: parking.svg
+  class: case-parking
+  description: Kunden är en snabbt växande och globalt ledande aktör i att hitta, betala och hantera parkeringar. Hejare har varit med från början i utvecklingen av en helt ny produkt. I ett tätt samarbete med kunden och användare har vi itererat fram superhärlig UX och design. Med fräscha JavaScript-ramverk har vi tillsammans med kunden arbetat fullstack och i symbios med avancerade algoritmer. Projektet är påhejat av hela organisationen och kundens kunder ser fram emot att jobba i det.
